@@ -59,14 +59,14 @@ const Profile = () => {
             <span className="text-white text-5xl italic mb-4">I'm <span className={`text-5xl italic text-[#d4e94c]`}>Robel Tamiru</span></span>
             <span className="text-white text-5xl italic">I'm <span className={`text-5xl italic text-[#d4e94c]`}>Your Guy</span></span>
             <div className="flex flex-row">
-              <span className="text-white text-md mt-10 w-[500px]">
+              <span className="text-white text-md mt-10 w-[530px]">
                 Greetings my name is ROBEL TAMIRU and I go by dotphic. I'm an architect who is 22 years old
                 and have a passion for sound and visuals. My goal in life is to excel in digital art, and I plan
                 to it through perseverance and hard effort.
               </span>
-              <div className="ml-2">
-                <img src="/images/image-2.png" className="w-[280px] h-[500px] absolute pt-20 ml-32 z-10 rounded" />
-                <div className={`bg-[#d4e94c] absolute w-64 h-72 ml-48`}></div>
+              <div>
+                <img src="/images/image-2.png" className="w-[280px] h-[500px] absolute right-10 pt-20 z-10 rounded" />
+                <div className={`bg-[#d4e94c] absolute right-0 w-64 h-72 ml-48`}></div>
               </div>
             </div>
           </div>
