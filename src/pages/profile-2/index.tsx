@@ -59,7 +59,7 @@ const Profile = () => {
             <span className="text-white text-5xl italic mb-4">I'm <span className={`text-5xl italic text-[#d4e94c]`}>Robel Tamiru</span></span>
             <span className="text-white text-5xl italic">I'm <span className={`text-5xl italic text-[#d4e94c]`}>Your Guy</span></span>
             <div className="flex flex-row">
-              <span className="text-white text-md mt-10 w-[530px]">
+              <span className="text-white text-md mt-10 mr-16 w-[530px]">
                 Greetings my name is ROBEL TAMIRU and I go by dotphic. I'm an architect who is 22 years old
                 and have a passion for sound and visuals. My goal in life is to excel in digital art, and I plan
                 to it through perseverance and hard effort.
@@ -274,8 +274,8 @@ const Profile = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-3 gap-6 pr-10">
-          <div className={`bg-[#000000] flex flex-col w-72 py-6 pl-5`}>
+        <div className="grid grid-cols-3 gap-x-4 pr-10">
+          <div className={`bg-[#000000] flex flex-col w-72 py-6 pl-5 mr-6`}>
             <div>
               <img src="/images/rating.png" />
             </div>
@@ -294,7 +294,7 @@ const Profile = () => {
             </div>
           </div>
 
-          <div className={`bg-[#000000] flex flex-col w-72 py-6 pl-5`}>
+          <div className={`bg-[#000000] flex flex-col w-72 py-6 pl-5 mr-6`}>
             <div>
               <img src="/images/rating.png" />
             </div>
@@ -332,7 +332,6 @@ const Profile = () => {
             </div>
           </div>
         </div>
-
       </div>
     </div>
   )
