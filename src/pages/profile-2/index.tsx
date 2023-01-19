@@ -128,7 +128,7 @@ const Profile = () => {
       <div className={`bg-[#d4e94c] -mt-20 pb-16`}>
         <div className="flex flex-col items-center w-full">
           <span className="italic text-white">I'm the guy for you</span>
-          <span className="text-white text-5xl mt-4 mb-16">Check some of my works</span>
+          <span className="text-white text-5xl mt-4 mb-8">Check some of my works</span>
           <div className="inline-flex justify-around w-full px-96">
             <span className="text-white text-sm">All</span>
             <span className="text-white text-sm">Graphic Design</span>
@@ -138,8 +138,8 @@ const Profile = () => {
         </div>
       </div>
       <div className={`bg-[#000000] pb-48`}>
-        <div className="absolute w-[400px] h-[250px] border-[4px] border-white -mt-40 ml-16" />
-        <div className="inline-flex justify-center w-full -mt-20">
+        <div className="absolute w-[400px] h-[250px] border-[4px] border-white -mt-24 ml-16" />
+        <div className="inline-flex justify-center w-full -mt-12">
           <div className="grid grid-cols-3 gap-6">
             <img src="/images/project-image-1.png" className="w-[300px] h-[300px] rounded-md z-10" />
             <img src="/images/project-image-2.png" className="w-[300px] h-[300px] rounded-md" />
