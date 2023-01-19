@@ -52,8 +52,8 @@ const Profile = () => {
       <div className="mt-16 pl-12">
         <div className="flex flex-row">
           <div className="flex flex-row">
-            <img src="/images/image-1.png" className="pl-20 rounded-md z-10 w-[423px] h-[325px]" />
-            <div className={`bg-[#d4e94c] absolute w-48 h-48 ml-8 mt-44`}></div>
+            <img src="/images/image-1.png" className="pl-20 rounded-md z-10 w-[323px] h-[225px]" />
+            <div className={`bg-[#d4e94c] absolute w-48 h-48 ml-8 mt-16`}></div>
           </div>
           <div className="ml-20 flex flex-col">
             <span className="text-white text-5xl italic mb-4">I'm <span className={`text-5xl italic text-[#d4e94c]`}>Robel Tamiru</span></span>
