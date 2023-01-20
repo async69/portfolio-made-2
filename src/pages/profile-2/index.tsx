@@ -19,21 +19,30 @@ const Profile = () => {
           <img src="/icons/twitter.svg" className="w-5 h-5 mt-4" />
         </div>
       </div>
-      <div className="flex flex-col items-start mt-32 pl-24">
-        <span className="text-xl text-white font-semibold">Hello, My Name Is</span>
-        <span className={`text-[#d4e94c] mt-16 mb-16`} style={{ fontSize: 120, fontWeight: 700 }}>Robel</span>
-        <span className={`text-[#d4e94c] mt-10 mb-16`} style={{ fontSize: 120, fontWeight: 700 }}>Tamiru</span>
-        <span className="text-white text-3xl">Call Me <span className="text-5xl">Dotphic</span></span>
+      <div className="flex flex-col items-start mt-32 sm:pl-8 lg:pl-24">
+        <span
+          className="sm:text-md md:text-lg lg:text-xl text-white font-semibold"
+        >Hello, My Name Is</span>
+        <span
+          className={`text-[#d4e94c] max-sm:text-[40px] lg:text-[120px] max-sm:font-semibold
+          lg:font-[700] max-sm:my-8 lg:my-16`}
+        >Robel</span>
+        <span
+          className={`text-[#d4e94c] max-sm:text-[40px] lg:text-[120px] max-sm:font-semibold
+          lg:font-[700] max-sm:mt-4 max-sm:mb-8 lg:mt-10 lg:mb-16`}
+        >Tamiru</span>
+        <span className="text-white max-sm:text-2xl lg:text-3xl">Call Me <span className="max-sm:text-4xl lg:text-5xl">Dotphic</span></span>
       </div>
-      <div className="flex flex-row">
-        <div className={`bg-[#d4e94c] w-16 h-20 ml-20 mt-32`}></div>
-        <div className={`bg-[#d4e94c] w-32 h-36 mt-[450px]`}></div>
-        <div className={`bg-[#d4e94c] flex flex-col items-center px-4 py-2 ml-8 mt-16`}>
-          <div className="h-96">
-            <img src="/images/avatar-bg.png" />
+
+      <div className="flex flex-row max-sm:ml-12 lg:ml-20">
+        <div className={`bg-[#d4e94c] w-16 h-20 mt-32`}></div>
+        <div className={`max-sm:hidden bg-[#d4e94c] w-32 h-36 mt-[450px]`}></div>
+        <div className={`max-sm:right-0 bg-[#d4e94c] flex justify-center max-sm:h-56 px-4 py-2 ml-8 max-sm:mt-24 lg:mt-16`}>
+          <div className="lg:h-96">
+            <img src="/images/avatar-bg.png" className='max-sm:h-[250px] max-sm:w-[200px] lg:h-[622px] lg:w-[323px]' />
           </div>
         </div>
-        <div className={`bg-[#d4e94c] w-32 h-36 ml-6 mt-[350px] flex flex-col items-center`}></div>
+        <div className={`max-sm:hidden bg-[#d4e94c] w-32 h-36 ml-6 mt-[350px] flex flex-col items-center`}></div>
       </div>
     </div>
   )
@@ -348,9 +357,9 @@ const Profile = () => {
       top: amount
     })
   }
-  
+
   const Navigator = () => (
-    <div className='fixed right-0 flex flex-col my-[10%]' style={{ zIndex: 100 }}>
+    <div className='max-sm:hidden lg:block fixed right-0 flex flex-col my-[10%]' style={{ zIndex: 100 }}>
       <Tooltip anchorId='user-home' content='Home' place='top' />
       <Tooltip anchorId='user-services' content='My Services' place='top' />
       <Tooltip anchorId='user-education' content='Education' place='top' />
