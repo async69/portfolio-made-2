@@ -167,7 +167,7 @@ const Profile = () => {
     <div className="pb-10">
       <div className={`max-sm:hidden absolute right-0 h-48 w-16 -mt-24 bg-[#d4e94c]`} />
       <div className={`max-sm:mx-6 flex flex-col md:mx-48 items-center`}>
-        
+
         <div className="flex max-sm:flex-col md:flex-row md:items-center justify-between w-full">
           <div className="flex flex-col mx-auto max-sm:mb-4">
             <span className="text-white text-lg">What I Can do...</span>
@@ -183,7 +183,7 @@ const Profile = () => {
               </span>
             </div>
           </div>
-          
+
         </div>
 
         <div className="flex max-sm:flex-col max-sm:mt-10 md:flex-row md:items-center justify-between w-full">
@@ -244,20 +244,20 @@ const Profile = () => {
 
   const SixthSection = () => (
     <div className={`bg-[#d4e94c] py-10`}>
-      <div className="w-3/5 inline-flex justify-around mb-10">
-        <div className="flex flex-col items-center">
+      <div className="w-3/5 max-sm:w-full inline-flex max-sm:justify-between md:justify-around mb-10">
+        <div className="flex flex-col items-center max-sm:hidden">
           <span className="text-white">Get in Touch</span>
-          <span className={`text-[#000000] text-4xl font-semibold mt-5 mb-3`}>Connect with Me with</span>
-          <span className={`text-[#000000] text-4xl font-semibold mb-4`}>Confidence</span>
+          <span className={`text-[#000000] text-center max-sm:text-2xl md:text-4xl font-semibold mt-5 mb-3`}>Connect with Me with</span>
+          <span className={`text-[#000000] max-sm:hidden md:text-4xl font-semibold mb-4`}>Confidence</span>
         </div>
-        <div className="inline-flex items-end">
+        <div className="inline-flex max-sm:justify-end items-end">
           <span className="text-2xl font-semibold mr-6">Testimonials</span>
-          <img src="/images/quotes.png" />
+          <img src="/images/quotes.png" className='max-sm:w-[100px] max-sm:w-[56px] md:w-[180px] md:w-[127px]' />
         </div>
       </div>
 
-      <div className="inline-flex justify-between w-full">
-        <div className="border-[4px] border-l-0 border-white inline-flex">
+      <div className="flex max-sm:flex-col md:flex-row justify-between w-full">
+        <div className="max-sm:hidden border-[4px] border-l-0 border-white inline-flex">
           <div className={`w-16 h-48 bg-[#000000] mt-10`} />
           <div className="inline-flex pt-5 pb-10 px-10">
             <div className="flex flex-col items-center mr-10">
@@ -285,8 +285,8 @@ const Profile = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-3 gap-x-4 pr-10">
-          <div className={`bg-[#000000] flex flex-col w-72 py-6 pl-5 mr-4`}>
+        <div className="grid sm:grid-cols-1 md:grid-cols-3 max-sm:gap-2 max-sm:mx-4 md:gap-4 md:pr-10">
+          <div className={`bg-[#000000] rounded-md flex flex-col max-sm:w-full md:w-72 py-6 pl-5 mr-4`}>
             <div>
               <img src="/images/rating.png" />
             </div>
@@ -305,7 +305,7 @@ const Profile = () => {
             </div>
           </div>
 
-          <div className={`bg-[#000000] flex flex-col w-72 py-6 pl-5 mr-6`}>
+          <div className={`bg-[#000000] flex flex-col max-sm:w-full md:w-72 py-6 pl-5 mr-4`}>
             <div>
               <img src="/images/rating.png" />
             </div>
@@ -324,7 +324,7 @@ const Profile = () => {
             </div>
           </div>
 
-          <div className={`bg-[#000000] flex flex-col w-72 py-6 pl-5`}>
+          <div className={`bg-[#000000] flex flex-col max-sm:w-full md:w-72 py-6 pl-5 mr-4`}>
             <div>
               <img src="/images/rating.png" />
             </div>
@@ -343,6 +343,40 @@ const Profile = () => {
             </div>
           </div>
         </div>
+
+        <div className="flex flex-col items-center md:hidden pt-10">
+          <span className="text-white">Get in Touch</span>
+          <span className={`text-[#000000] text-center max-sm:text-2xl md:text-4xl font-semibold mt-5 mb-3`}>Connect with Me with</span>
+          <span className={`text-[#000000] max-sm:hidden md:text-4xl font-semibold mb-4`}>Confidence</span>
+        </div>
+        <div className="md:hidden border-[4px] border-l-0 border-white inline-flex">
+          <div className={`w-16 h-48 bg-[#000000] mt-10`} />
+          <div className="inline-flex pt-5 pb-10 px-10">
+            <div className="flex flex-col items-center mr-10">
+              <img src="/icons/twitter.svg" className="w-5 h-5" />
+              <img src="/icons/linkedin.svg" className="w-5 h-5 mt-4" />
+              <img src="/icons/facebook.svg" className="w-5 h-5 mt-4" />
+              <img src="/icons/dribble.svg" className="w-5 h-5 mt-4" />
+              <img src="/icons/twitter.svg" className="w-5 h-5 mt-4" />
+              <img src="/icons/twitter.svg" className="w-5 h-5 mt-4" />
+            </div>
+            <div className="flex flex-col">
+              <div className="flex flex-col">
+                <span className={`text-[#000000] text-lg font-semibold mb-1`}>Call Me</span>
+                <span className={`text-[#000000] text-xl font-bold`}>+251940257052</span>
+              </div>
+              <div className="flex flex-col mt-4">
+                <span className={`text-[#000000] text-lg font-semibold mb-1`}>Email</span>
+                <span className={`text-[#000000] text-xl font-bold`}>robsizerex@gmail.com</span>
+              </div>
+              <div className="flex flex-col mt-4">
+                <span className={`text-[#000000] text-lg font-semibold mb-1`}>@dotphic</span>
+                <span className={`text-[#000000] text-sm`} style={{ fontWeight: 600 }}>in the following social media sites</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   )
