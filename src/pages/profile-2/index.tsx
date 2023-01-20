@@ -49,7 +49,7 @@ const Profile = () => {
 
   const SecondSection = () => (
     <div>
-      <div className="ml-[520px] mt-36">
+      <div className="max-sm:ml-36 lg:ml-[520px] max-sm:mt-10 lg:mt-36">
         <div className="flex flex-col">
           <div className="flex flex-row items-center">
             <img src="/images/mail.png" className="w-8" />
@@ -58,22 +58,22 @@ const Profile = () => {
           <div className={`bg-[#d4e94c] w-48 h-8 mt-8`} style={{ borderBottomLeftRadius: 10, borderBottomRightRadius: 10 }}></div>
         </div>
       </div>
-      <div className="mt-16 pl-12">
-        <div className="flex flex-row">
+      <div className="mt-16 lg:pl-12">
+        <div className="flex max-sm:flex-col lg:flex-row">
           <div className="flex flex-row">
-            <img src="/images/image-1.png" className="pl-20 rounded-md z-10 w-[323px] h-[225px]" />
-            <div className={`bg-[#d4e94c] absolute w-48 h-48 ml-8 mt-16`}></div>
+            <img src="/images/image-1.png" className="lg:pl-20 rounded-md z-10 max-sm:left-0 max-sm:w-32 max-sm:w-32 lg:w-[323px] lg:h-[225px]" />
+            <div className={`bg-[#d4e94c] absolute max-sm:w-32 max-sm:h-32 lg:w-48 lg:h-48 ml-8 mt-16`} />
           </div>
-          <div className="ml-20 flex flex-col">
-            <span className="text-white text-5xl italic mb-4">I'm <span className={`text-5xl italic text-[#d4e94c]`}>Robel Tamiru</span></span>
-            <span className="text-white text-5xl italic">I'm <span className={`text-5xl italic text-[#d4e94c]`}>Your Guy</span></span>
+          <div className="ml-20 flex flex-col max-sm:mt-16">
+            <span className="text-white max-sm:text-3xl lg:text-5xl italic mb-4">I'm <span className={`max-sm:text-3xl lg:text-5xlitalic text-[#d4e94c]`}>Robel Tamiru</span></span>
+            <span className="text-white max-sm:text-3xl lg:text-5xl italic">I'm <span className={`max-sm:text-3xl lg:text-5xl italic text-[#d4e94c]`}>Your Guy</span></span>
             <div className="flex flex-row">
-              <span className="text-white text-md mt-10 mr-16 w-[530px]">
+              <span className="text-white text-md max-sm:mt-2 lg:mt-10 mr-16 w-[530px]">
                 Greetings my name is ROBEL TAMIRU and I go by dotphic. I'm an architect who is 22 years old
                 and have a passion for sound and visuals. My goal in life is to excel in digital art, and I plan
                 to it through perseverance and hard effort.
               </span>
-              <div>
+              <div className='hidden'>
                 <img src="/images/image-2.png" className="w-[280px] h-[500px] absolute right-10 pt-20 z-10 rounded" />
                 <div className={`bg-[#d4e94c] absolute right-0 w-64 h-72 ml-48`}></div>
               </div>
