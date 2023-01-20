@@ -19,28 +19,37 @@ const Profile = () => {
           <img src="/icons/twitter.svg" className="w-5 h-5 mt-4" />
         </div>
       </div>
-      <div className="flex flex-col items-start mt-32 pl-24">
-        <span className="text-xl text-white font-semibold">Hello, My Name Is</span>
-        <span className={`text-[#d4e94c] mt-16 mb-16`} style={{ fontSize: 120, fontWeight: 700 }}>Robel</span>
-        <span className={`text-[#d4e94c] mt-10 mb-16`} style={{ fontSize: 120, fontWeight: 700 }}>Tamiru</span>
-        <span className="text-white text-3xl">Call Me <span className="text-5xl">Dotphic</span></span>
+      <div className="flex flex-col items-start mt-32 sm:pl-8 md:pl-24">
+        <span
+          className="sm:text-md md:text-lg md:text-xl text-white font-semibold"
+        >Hello, My Name Is</span>
+        <span
+          className={`text-[#d4e94c] max-sm:text-[40px] md:text-[120px] max-sm:font-semibold
+          md:font-[700] max-sm:my-8 md:my-16`}
+        >Robel</span>
+        <span
+          className={`text-[#d4e94c] max-sm:text-[40px] md:text-[120px] max-sm:font-semibold
+          md:font-[700] max-sm:mt-4 max-sm:mb-8 md:mt-10 md:mb-16`}
+        >Tamiru</span>
+        <span className="text-white max-sm:text-2xl md:text-3xl">Call Me <span className="max-sm:text-4xl md:text-5xl">Dotphic</span></span>
       </div>
-      <div className="flex flex-row">
-        <div className={`bg-[#d4e94c] w-16 h-20 ml-20 mt-32`}></div>
-        <div className={`bg-[#d4e94c] w-32 h-36 mt-[450px]`}></div>
-        <div className={`bg-[#d4e94c] flex flex-col items-center px-4 py-2 ml-8 mt-16`}>
-          <div className="h-96">
-            <img src="/images/avatar-bg.png" />
+
+      <div className="flex flex-row max-sm:ml-12 md:ml-20">
+        <div className={`bg-[#d4e94c] w-16 h-20 mt-32`}></div>
+        <div className={`max-sm:hidden bg-[#d4e94c] w-32 h-36 mt-[450px]`}></div>
+        <div className={`max-sm:right-0 bg-[#d4e94c] flex justify-center max-sm:h-56 px-4 py-2 ml-8 max-sm:mt-24 md:mt-16`}>
+          <div className="md:h-96">
+            <img src="/images/avatar-bg.png" className='max-sm:h-[250px] max-sm:w-[200px] md:h-[622px] md:w-[323px]' />
           </div>
         </div>
-        <div className={`bg-[#d4e94c] w-32 h-36 ml-6 mt-[350px] flex flex-col items-center`}></div>
+        <div className={`max-sm:hidden bg-[#d4e94c] w-32 h-36 ml-6 mt-[350px] flex flex-col items-center`}></div>
       </div>
     </div>
   )
 
   const SecondSection = () => (
     <div>
-      <div className="ml-[520px] mt-36">
+      <div className="max-sm:ml-36 md:ml-[520px] max-sm:mt-10 md:mt-36">
         <div className="flex flex-col">
           <div className="flex flex-row items-center">
             <img src="/images/mail.png" className="w-8" />
@@ -49,22 +58,22 @@ const Profile = () => {
           <div className={`bg-[#d4e94c] w-48 h-8 mt-8`} style={{ borderBottomLeftRadius: 10, borderBottomRightRadius: 10 }}></div>
         </div>
       </div>
-      <div className="mt-16 pl-12">
-        <div className="flex flex-row">
+      <div className="mt-16 md:pl-12">
+        <div className="flex max-sm:flex-col md:flex-row">
           <div className="flex flex-row">
-            <img src="/images/image-1.png" className="pl-20 rounded-md z-10 w-[323px] h-[225px]" />
-            <div className={`bg-[#d4e94c] absolute w-48 h-48 ml-8 mt-16`}></div>
+            <img src="/images/image-1.png" className="md:pl-20 rounded-md z-10 max-sm:left-0 max-sm:w-32 max-sm:w-32 md:w-[323px] md:h-[225px]" />
+            <div className={`bg-[#d4e94c] absolute max-sm:w-32 max-sm:h-32 md:w-48 md:h-48 ml-8 mt-16`} />
           </div>
-          <div className="ml-20 flex flex-col">
-            <span className="text-white text-5xl italic mb-4">I'm <span className={`text-5xl italic text-[#d4e94c]`}>Robel Tamiru</span></span>
-            <span className="text-white text-5xl italic">I'm <span className={`text-5xl italic text-[#d4e94c]`}>Your Guy</span></span>
+          <div className="ml-20 flex flex-col max-sm:mt-16">
+            <span className="text-white max-sm:text-3xl md:text-5xl italic mb-4">I'm <span className={`max-sm:text-3xl md:text-5xlitalic text-[#d4e94c]`}>Robel Tamiru</span></span>
+            <span className="text-white max-sm:text-3xl md:text-5xl italic">I'm <span className={`max-sm:text-3xl md:text-5xl italic text-[#d4e94c]`}>Your Guy</span></span>
             <div className="flex flex-row">
-              <span className="text-white text-md mt-10 mr-16 w-[530px]">
+              <span className="text-white text-md max-sm:mt-2 md:mt-10 mr-16 w-[530px]">
                 Greetings my name is ROBEL TAMIRU and I go by dotphic. I'm an architect who is 22 years old
                 and have a passion for sound and visuals. My goal in life is to excel in digital art, and I plan
                 to it through perseverance and hard effort.
               </span>
-              <div>
+              <div className='hidden'>
                 <img src="/images/image-2.png" className="w-[280px] h-[500px] absolute right-10 pt-20 z-10 rounded" />
                 <div className={`bg-[#d4e94c] absolute right-0 w-64 h-72 ml-48`}></div>
               </div>
@@ -76,26 +85,26 @@ const Profile = () => {
   )
 
   const ThirdSection = () => (
-    <div className={`mt-56 bg-[#d4e94c]`}>
+    <div className={`md:mt-56 max-sm:mt-12 bg-[#d4e94c]`}>
       <div className="inline-flex">
-        <div className={`mt-64 px-16 h-64 bg-[#000000]`} />
-        <div className="inline-flex items-center px-48 py-32">
-          <div className="w-2/3 flex flex-col pr-10">
+        <div className={`max-sm:mt-32 md:mt-64 max-sm:px-8 md:px-16 max-sm:h-32 md:h-64 bg-[#000000]`} />
+        <div className="flex max-sm:flex-col md:flex-row items-center max-sm:px-12 max-sm:py-16 md:px-48 md:py-32">
+          <div className="max-sm:w-full md:w-2/3 flex flex-col md:pr-10">
             <span className={`font-semibold text-lg text-[#000000]`}>My Skills</span>
-            <span className={`text-5xl leading-1 font-bold text-[#000000] mt-4 mb-4`}>You Can Imagine</span>
-            <span className={`text-5xl leading-9 font-bold text-[#000000] mb-4`}>What I Can Do</span>
-            <span className={`text-[#000000] mt-4`}>
+            <span className={`max-sm:text-3xl md:text-5xl leading-1 font-bold text-[#000000] mt-4 mb-4`}>You Can Imagine</span>
+            <span className={`max-sm:text-3xl md:text-5xl leading-9 font-bold text-[#000000] mb-4`}>What I Can Do</span>
+            <span className={`text-[#000000] max-sm:w-full md:mt-4`}>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo commodi sunt totam ipsum aut quam saepe, aliquid omnis accusamus ea nam. Eligendi excepturi quibusdam odio quaerat repellat dicta eos hic!
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo commodi sunt totam ipsum aut quam saepe, aliquid omnis accusamus ea nam. Eligendi excepturi quibusdam odio quaerat repellat dicta eos hic!
             </span>
           </div>
-          <div className="w-1/3 flex flex-col">
+          <div className="max-sm:w-full max-sm:-ml-36 max-sm:mt-12 md:w-1/3 flex flex-col">
             <div className="flex flex-col">
               <div className="flex flex-row justify-between">
                 <span>Music Production</span>
                 <span>86%</span>
               </div>
-              <div className="bg-white w-96 h-2 mt-3 rounded-md">
+              <div className="bg-white max-sm:w-80 md:w-96 h-2 mt-3 rounded-md">
                 <div className={`bg-[#000000] rounded-md h-2 w-[86%]`}></div>
               </div>
             </div>
@@ -104,7 +113,7 @@ const Profile = () => {
                 <span>Graphics Design</span>
                 <span>90%</span>
               </div>
-              <div className="bg-white w-96 h-2 mt-3 rounded-md">
+              <div className="bg-white max-sm:w-80 md:w-96 h-2 mt-3 rounded-md">
                 <div className={`bg-[#000000] rounded-md h-2 w-[90%]`}></div>
               </div>
             </div>
@@ -113,7 +122,7 @@ const Profile = () => {
                 <span>Architechtural Design</span>
                 <span>66%</span>
               </div>
-              <div className="bg-white w-96 h-2 mt-3 rounded-md">
+              <div className="bg-white max-sm:w-80 md:w-96 h-2 mt-3 rounded-md">
                 <div className={`bg-[#000000] rounded-md h-2 w-[66%]`}></div>
               </div>
             </div>
@@ -125,28 +134,28 @@ const Profile = () => {
 
   const FourthSection = () => (
     <div>
-      <div className={`bg-[#d4e94c] -mt-20 pb-16`}>
+      <div className={`bg-[#d4e94c] md:-mt-20 pb-16`}>
         <div className="flex flex-col items-center w-full">
           <span className="italic text-white">I'm the guy for you</span>
-          <span className="text-white text-5xl mt-4 mb-8">Check some of my works</span>
-          <div className="inline-flex justify-around w-full px-96">
-            <span className="text-white text-sm">All</span>
-            <span className="text-white text-sm">Graphic Design</span>
-            <span className="text-white text-sm">Music Design</span>
+          <span className="text-white max-sm:text-3xl md:text-5xl mt-4 mb-8">Check some of my works</span>
+          <div className="inline-flex justify-around w-full md:px-4 px-96">
+            <span className="text-white text-sm max-sm:mr-2">All</span>
+            <span className="text-white text-sm max-sm:mr-2">Graphic Design</span>
+            <span className="text-white text-sm max-sm:mr-2">Music Design</span>
             <span className="text-white text-sm">Animation Development</span>
           </div>
         </div>
       </div>
-      <div className={`bg-[#000000] pb-48`}>
-        <div className="absolute w-[400px] h-[250px] border-[4px] border-white -mt-24 ml-16" />
+      <div className={`bg-[#000000] pb-48 max-sm:px-4`}>
+        <div className="max-sm:hidden absolute w-[400px] h-[250px] border-[4px] border-white -mt-24 ml-16" />
         <div className="inline-flex justify-center w-full -mt-12">
           <div className="grid grid-cols-3 gap-6">
-            <img src="/images/project-image-1.png" className="w-[300px] h-[300px] rounded-md z-10" />
-            <img src="/images/project-image-2.png" className="w-[300px] h-[300px] rounded-md" />
-            <img src="/images/project-image-3.png" className="w-[300px] h-[300px] rounded-md" />
-            <img src="/images/project-image-4.png" className="w-[300px] h-[300px] rounded-md" />
-            <img src="/images/project-image-5.png" className="w-[300px] h-[300px] rounded-md" />
-            <img src="/images/project-image-6.png" className="w-[300px] h-[300px] rounded-md z-10" />
+            <img src="/images/project-image-1.png" className="md:w-[300px] md:h-[300px] rounded-md z-10" />
+            <img src="/images/project-image-2.png" className="md:w-[300px] md:h-[300px] rounded-md z-10" />
+            <img src="/images/project-image-3.png" className="md:w-[300px] md:h-[300px] rounded-md z-10" />
+            <img src="/images/project-image-4.png" className="md:w-[300px] md:h-[300px] rounded-md z-10" />
+            <img src="/images/project-image-5.png" className="md:w-[300px] md:h-[300px] rounded-md z-10" />
+            <img src="/images/project-image-6.png" className="md:w-[300px] md:h-[300px] rounded-md z-10" />
           </div>
         </div>
         <div className="absolute right-0 w-[420px] h-[250px] border-[4px] border-white mr-16 -mt-48" />
@@ -156,41 +165,43 @@ const Profile = () => {
 
   const FifthSection = () => (
     <div className="pb-10">
-      <div className={`absolute right-0 h-48 w-16 -mt-24 bg-[#d4e94c]`} />
-      <div className={`flex flex-col mx-48 items-center`}>
-        <div className="inline-flex items-center justify-between w-full">
-          <div className="flex flex-col mx-auto">
+      <div className={`max-sm:hidden absolute right-0 h-48 w-16 -mt-24 bg-[#d4e94c]`} />
+      <div className={`max-sm:mx-6 flex flex-col md:mx-48 items-center`}>
+
+        <div className="flex max-sm:flex-col md:flex-row md:items-center justify-between w-full">
+          <div className="flex flex-col mx-auto max-sm:mb-4">
             <span className="text-white text-lg">What I Can do...</span>
             <span className="text-white text-4xl mt-4">My Services</span>
           </div>
 
-          <div className={`pl-8 pr-24 pt-10 pb-16 bg-[#d4e94c] inline-flex rounded-md mb-4`}>
-            <img src="/images/music-avatar.png" className="w-[90px] h-[90px] mr-4" />
+          <div className={`pl-8 md:pr-24 pt-10 pb-16 bg-[#d4e94c] inline-flex rounded-md mb-4`}>
+            <img src="/images/music-avatar.png" className="max-sm:w-[60px] max-sm:h-[60px] md:w-[90px] md:h-[90px] mr-4" />
             <div className="flex flex-col">
               <span className={`text-[#000000] text-3xl font-semibold mb-3`}>Music Production</span>
-              <span className={`text-[#000000] text-sm w-72`}>
+              <span className={`text-[#000000] text-sm max-sm:w-56 lg:w-72`}>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam assumenda sapiente harum quae unde explicabo totam exercitationem inventore eos, omnis accusamus veritatis ullam praesentium quis consequatur fuga mollitia suscipit modi?
               </span>
             </div>
           </div>
+
         </div>
 
-        <div className="inline-flex items-center justify-between w-full">
-          <div className={`pl-8 pr-24 pt-10 pb-10 bg-[#d4e94c] inline-flex rounded-md mr-8 -mt-16`}>
-            <img src="/images/photo-avatar.png" className="w-[90px] h-[90px] mr-4" />
+        <div className="flex max-sm:flex-col max-sm:mt-10 md:flex-row md:items-center justify-between w-full">
+          <div className={`pl-8 max-sm:pr-32 md:pr-24 pt-10 pb-10 bg-[#d4e94c] inline-flex rounded-md md:mr-8 md:-mt-16`}>
+            <img src="/images/photo-avatar.png" className="max-sm:w-[60px] max-sm:h-[60px] md:w-[90px] md:h-[90px] mr-4" />
             <div className="flex flex-col">
-              <span className={`text-[#000000] text-3xl font-semibold mb-3`}>Photography & Video</span>
-              <span className={`text-[#000000] text-sm w-96`}>
+              <span className={`text-[#000000] text-3xl font-semibold mb-3 max-sm:w-48`}>Photography & Video</span>
+              <span className={`text-[#000000] text-sm max-sm:w-56 w-96`}>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam assumenda sapiente harum quae unde explicabo totam exercitationem inventore eos, omnis accusamus veritatis ullam praesentium quis consequatur fuga mollitia suscipit modi?
               </span>
             </div>
           </div>
 
           <div className={`pl-8 pr-24 pt-10 pb-16 bg-[#d4e94c] inline-flex rounded-md mt-4`}>
-            <img src="/images/graphic-avatar.png" className="w-[90px] h-[90px] mr-4" />
+            <img src="/images/graphic-avatar.png" className="max-sm:w-[60px] max-sm:h-[60px] md:w-[90px] md:h-[90px] mr-4" />
             <div className="flex flex-col">
               <span className={`text-[#000000] text-3xl font-semibold mb-3`}>Graphic Design</span>
-              <span className={`text-[#000000] text-sm w-72`}>
+              <span className={`text-[#000000] text-sm max-sm:w-56 md:w-72`}>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam assumenda sapiente harum quae unde explicabo totam exercitationem inventore eos, omnis accusamus veritatis ullam praesentium quis consequatur fuga mollitia suscipit modi?
               </span>
             </div>
@@ -233,20 +244,20 @@ const Profile = () => {
 
   const SixthSection = () => (
     <div className={`bg-[#d4e94c] py-10`}>
-      <div className="w-3/5 inline-flex justify-around mb-10">
-        <div className="flex flex-col items-center">
+      <div className="w-3/5 max-sm:w-full inline-flex max-sm:justify-between md:justify-around mb-10">
+        <div className="flex flex-col items-center max-sm:hidden">
           <span className="text-white">Get in Touch</span>
-          <span className={`text-[#000000] text-4xl font-semibold mt-5 mb-3`}>Connect with Me with</span>
-          <span className={`text-[#000000] text-4xl font-semibold mb-4`}>Confidence</span>
+          <span className={`text-[#000000] text-center max-sm:text-2xl md:text-4xl font-semibold mt-5 mb-3`}>Connect with Me with</span>
+          <span className={`text-[#000000] max-sm:hidden md:text-4xl font-semibold mb-4`}>Confidence</span>
         </div>
-        <div className="inline-flex items-end">
+        <div className="inline-flex max-sm:justify-end items-end">
           <span className="text-2xl font-semibold mr-6">Testimonials</span>
-          <img src="/images/quotes.png" />
+          <img src="/images/quotes.png" className='max-sm:w-[100px] max-sm:w-[56px] md:w-[180px] md:w-[127px]' />
         </div>
       </div>
 
-      <div className="inline-flex justify-between w-full">
-        <div className="border-[4px] border-l-0 border-white inline-flex">
+      <div className="flex max-sm:flex-col md:flex-row justify-between w-full">
+        <div className="max-sm:hidden border-[4px] border-l-0 border-white inline-flex">
           <div className={`w-16 h-48 bg-[#000000] mt-10`} />
           <div className="inline-flex pt-5 pb-10 px-10">
             <div className="flex flex-col items-center mr-10">
@@ -274,8 +285,8 @@ const Profile = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-3 gap-x-4 pr-10">
-          <div className={`bg-[#000000] flex flex-col w-72 py-6 pl-5 mr-4`}>
+        <div className="grid sm:grid-cols-1 md:grid-cols-3 max-sm:gap-2 max-sm:mx-4 md:gap-4 md:pr-10">
+          <div className={`bg-[#000000] rounded-md flex flex-col max-sm:w-full md:w-72 py-6 pl-5 mr-4`}>
             <div>
               <img src="/images/rating.png" />
             </div>
@@ -294,7 +305,7 @@ const Profile = () => {
             </div>
           </div>
 
-          <div className={`bg-[#000000] flex flex-col w-72 py-6 pl-5 mr-6`}>
+          <div className={`bg-[#000000] flex flex-col max-sm:w-full md:w-72 py-6 pl-5 mr-4`}>
             <div>
               <img src="/images/rating.png" />
             </div>
@@ -313,7 +324,7 @@ const Profile = () => {
             </div>
           </div>
 
-          <div className={`bg-[#000000] flex flex-col w-72 py-6 pl-5`}>
+          <div className={`bg-[#000000] flex flex-col max-sm:w-full md:w-72 py-6 pl-5 mr-4`}>
             <div>
               <img src="/images/rating.png" />
             </div>
@@ -332,6 +343,40 @@ const Profile = () => {
             </div>
           </div>
         </div>
+
+        <div className="flex flex-col items-center md:hidden pt-10">
+          <span className="text-white">Get in Touch</span>
+          <span className={`text-[#000000] text-center max-sm:text-2xl md:text-4xl font-semibold mt-5 mb-3`}>Connect with Me with</span>
+          <span className={`text-[#000000] max-sm:hidden md:text-4xl font-semibold mb-4`}>Confidence</span>
+        </div>
+        <div className="md:hidden border-[4px] border-l-0 border-white inline-flex">
+          <div className={`w-16 h-48 bg-[#000000] mt-10`} />
+          <div className="inline-flex pt-5 pb-10 px-10">
+            <div className="flex flex-col items-center mr-10">
+              <img src="/icons/twitter.svg" className="w-5 h-5" />
+              <img src="/icons/linkedin.svg" className="w-5 h-5 mt-4" />
+              <img src="/icons/facebook.svg" className="w-5 h-5 mt-4" />
+              <img src="/icons/dribble.svg" className="w-5 h-5 mt-4" />
+              <img src="/icons/twitter.svg" className="w-5 h-5 mt-4" />
+              <img src="/icons/twitter.svg" className="w-5 h-5 mt-4" />
+            </div>
+            <div className="flex flex-col">
+              <div className="flex flex-col">
+                <span className={`text-[#000000] text-lg font-semibold mb-1`}>Call Me</span>
+                <span className={`text-[#000000] text-xl font-bold`}>+251940257052</span>
+              </div>
+              <div className="flex flex-col mt-4">
+                <span className={`text-[#000000] text-lg font-semibold mb-1`}>Email</span>
+                <span className={`text-[#000000] text-xl font-bold`}>robsizerex@gmail.com</span>
+              </div>
+              <div className="flex flex-col mt-4">
+                <span className={`text-[#000000] text-lg font-semibold mb-1`}>@dotphic</span>
+                <span className={`text-[#000000] text-sm`} style={{ fontWeight: 600 }}>in the following social media sites</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   )
@@ -348,9 +393,9 @@ const Profile = () => {
       top: amount
     })
   }
-  
+
   const Navigator = () => (
-    <div className='fixed right-0 flex flex-col my-[10%]' style={{ zIndex: 100 }}>
+    <div className='max-sm:hidden md:block fixed right-0 flex flex-col my-[10%]' style={{ zIndex: 100 }}>
       <Tooltip anchorId='user-home' content='Home' place='top' />
       <Tooltip anchorId='user-services' content='My Services' place='top' />
       <Tooltip anchorId='user-education' content='Education' place='top' />
@@ -386,7 +431,7 @@ const Profile = () => {
   )
 
   return (
-    <div className={`bg-[#000000] w-full`}>
+    <div className={`bg-[#000000] w-[100vw] overflow-x-hidden`}>
       <div className="flex flex-col">
         <div className={`bg-[#d4e94c] w-28 h-12`}></div>
         <Navigator />
