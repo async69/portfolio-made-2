@@ -85,26 +85,26 @@ const Profile = () => {
   )
 
   const ThirdSection = () => (
-    <div className={`mt-56 bg-[#d4e94c]`}>
+    <div className={`lg:mt-56 max-sm:mt-12 bg-[#d4e94c]`}>
       <div className="inline-flex">
-        <div className={`mt-64 px-16 h-64 bg-[#000000]`} />
-        <div className="inline-flex items-center px-48 py-32">
-          <div className="w-2/3 flex flex-col pr-10">
+        <div className={`max-sm:mt-32 lg:mt-64 max-sm:px-8 lg:px-16 max-sm:h-32 lg:h-64 bg-[#000000]`} />
+        <div className="flex max-sm:flex-col lg:flex-row items-center max-sm:px-12 max-sm:py-16 lg:px-48 lg:py-32">
+          <div className="max-sm:w-full lg:w-2/3 flex flex-col lg:pr-10">
             <span className={`font-semibold text-lg text-[#000000]`}>My Skills</span>
-            <span className={`text-5xl leading-1 font-bold text-[#000000] mt-4 mb-4`}>You Can Imagine</span>
-            <span className={`text-5xl leading-9 font-bold text-[#000000] mb-4`}>What I Can Do</span>
-            <span className={`text-[#000000] mt-4`}>
+            <span className={`max-sm:text-3xl lg:text-5xl leading-1 font-bold text-[#000000] mt-4 mb-4`}>You Can Imagine</span>
+            <span className={`max-sm:text-3xl lg:text-5xl leading-9 font-bold text-[#000000] mb-4`}>What I Can Do</span>
+            <span className={`text-[#000000] max-sm:w-full lg:mt-4`}>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo commodi sunt totam ipsum aut quam saepe, aliquid omnis accusamus ea nam. Eligendi excepturi quibusdam odio quaerat repellat dicta eos hic!
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo commodi sunt totam ipsum aut quam saepe, aliquid omnis accusamus ea nam. Eligendi excepturi quibusdam odio quaerat repellat dicta eos hic!
             </span>
           </div>
-          <div className="w-1/3 flex flex-col">
+          <div className="max-sm:w-full max-sm:-ml-36 max-sm:mt-12 lg:w-1/3 flex flex-col">
             <div className="flex flex-col">
               <div className="flex flex-row justify-between">
                 <span>Music Production</span>
                 <span>86%</span>
               </div>
-              <div className="bg-white w-96 h-2 mt-3 rounded-md">
+              <div className="bg-white max-sm:w-80 lg:w-96 h-2 mt-3 rounded-md">
                 <div className={`bg-[#000000] rounded-md h-2 w-[86%]`}></div>
               </div>
             </div>
@@ -113,7 +113,7 @@ const Profile = () => {
                 <span>Graphics Design</span>
                 <span>90%</span>
               </div>
-              <div className="bg-white w-96 h-2 mt-3 rounded-md">
+              <div className="bg-white max-sm:w-80 lg:w-96 h-2 mt-3 rounded-md">
                 <div className={`bg-[#000000] rounded-md h-2 w-[90%]`}></div>
               </div>
             </div>
@@ -122,7 +122,7 @@ const Profile = () => {
                 <span>Architechtural Design</span>
                 <span>66%</span>
               </div>
-              <div className="bg-white w-96 h-2 mt-3 rounded-md">
+              <div className="bg-white max-sm:w-80 lg:w-96 h-2 mt-3 rounded-md">
                 <div className={`bg-[#000000] rounded-md h-2 w-[66%]`}></div>
               </div>
             </div>
@@ -134,7 +134,7 @@ const Profile = () => {
 
   const FourthSection = () => (
     <div>
-      <div className={`bg-[#d4e94c] -mt-20 pb-16`}>
+      <div className={`bg-[#d4e94c] lg:-mt-20 pb-16`}>
         <div className="flex flex-col items-center w-full">
           <span className="italic text-white">I'm the guy for you</span>
           <span className="text-white text-5xl mt-4 mb-8">Check some of my works</span>
