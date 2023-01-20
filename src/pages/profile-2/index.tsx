@@ -431,7 +431,7 @@ const Profile = () => {
   )
 
   return (
-    <div className={`bg-[#000000] w-full`}>
+    <div className={`bg-[#000000] w-[100vw] overflow-x-hidden`}>
       <div className="flex flex-col">
         <div className={`bg-[#d4e94c] w-28 h-12`}></div>
         <Navigator />
