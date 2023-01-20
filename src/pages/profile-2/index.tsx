@@ -275,7 +275,7 @@ const Profile = () => {
         </div>
 
         <div className="grid grid-cols-3 gap-x-4 pr-10">
-          <div className={`bg-[#000000] flex flex-col w-72 py-6 pl-5 mr-6`}>
+          <div className={`bg-[#000000] flex flex-col w-72 py-6 pl-5 mr-4`}>
             <div>
               <img src="/images/rating.png" />
             </div>
