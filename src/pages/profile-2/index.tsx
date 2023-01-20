@@ -137,25 +137,25 @@ const Profile = () => {
       <div className={`bg-[#d4e94c] lg:-mt-20 pb-16`}>
         <div className="flex flex-col items-center w-full">
           <span className="italic text-white">I'm the guy for you</span>
-          <span className="text-white text-5xl mt-4 mb-8">Check some of my works</span>
-          <div className="inline-flex justify-around w-full px-96">
-            <span className="text-white text-sm">All</span>
-            <span className="text-white text-sm">Graphic Design</span>
-            <span className="text-white text-sm">Music Design</span>
+          <span className="text-white max-sm:text-3xl lg:text-5xl mt-4 mb-8">Check some of my works</span>
+          <div className="inline-flex justify-around w-full lg:px-4 px-96">
+            <span className="text-white text-sm max-sm:mr-2">All</span>
+            <span className="text-white text-sm max-sm:mr-2">Graphic Design</span>
+            <span className="text-white text-sm max-sm:mr-2">Music Design</span>
             <span className="text-white text-sm">Animation Development</span>
           </div>
         </div>
       </div>
-      <div className={`bg-[#000000] pb-48`}>
-        <div className="absolute w-[400px] h-[250px] border-[4px] border-white -mt-24 ml-16" />
+      <div className={`bg-[#000000] pb-48 max-sm:px-4`}>
+        <div className="max-sm:hidden absolute w-[400px] h-[250px] border-[4px] border-white -mt-24 ml-16" />
         <div className="inline-flex justify-center w-full -mt-12">
           <div className="grid grid-cols-3 gap-6">
-            <img src="/images/project-image-1.png" className="w-[300px] h-[300px] rounded-md z-10" />
-            <img src="/images/project-image-2.png" className="w-[300px] h-[300px] rounded-md" />
-            <img src="/images/project-image-3.png" className="w-[300px] h-[300px] rounded-md" />
-            <img src="/images/project-image-4.png" className="w-[300px] h-[300px] rounded-md" />
-            <img src="/images/project-image-5.png" className="w-[300px] h-[300px] rounded-md" />
-            <img src="/images/project-image-6.png" className="w-[300px] h-[300px] rounded-md z-10" />
+            <img src="/images/project-image-1.png" className="lg:w-[300px] lg:h-[300px] rounded-md z-10" />
+            <img src="/images/project-image-2.png" className="lg:w-[300px] lg:h-[300px] rounded-md z-10" />
+            <img src="/images/project-image-3.png" className="lg:w-[300px] lg:h-[300px] rounded-md z-10" />
+            <img src="/images/project-image-4.png" className="lg:w-[300px] lg:h-[300px] rounded-md z-10" />
+            <img src="/images/project-image-5.png" className="lg:w-[300px] lg:h-[300px] rounded-md z-10" />
+            <img src="/images/project-image-6.png" className="lg:w-[300px] lg:h-[300px] rounded-md z-10" />
           </div>
         </div>
         <div className="absolute right-0 w-[420px] h-[250px] border-[4px] border-white mr-16 -mt-48" />
